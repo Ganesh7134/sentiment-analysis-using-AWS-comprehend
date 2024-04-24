@@ -11,24 +11,24 @@ from streamlit_lottie import st_lottie
 # Initialize AWS services
 s3 = boto3.client('s3', 
                   region_name='us-east-1',
-                  aws_access_key_id='AKIAZI2LHWVWTXGWO7OS',
-                  aws_secret_access_key='x4z3KO67yVn+EHgTuJgz/WYmSVmoM8PbO67t88en')
+                  aws_access_key_id='YOUR_ACCESS_KEY_ID',
+                  aws_secret_access_key='YOUR_SECRET_ACCESS_KEY')
 dynamodb = boto3.resource('dynamodb', 
                           region_name='us-east-1',
-                          aws_access_key_id='AKIAZI2LHWVWTXGWO7OS',
-                          aws_secret_access_key='x4z3KO67yVn+EHgTuJgz/WYmSVmoM8PbO67t88en')
+                          aws_access_key_id='YOUR_ACCESS_KEY_ID',
+                          aws_secret_access_key='YOUR_SECRET_ACCESS_KEY')
 comprehend = boto3.client('comprehend', 
                           region_name='us-east-1',
-                          aws_access_key_id='AKIAZI2LHWVWTXGWO7OS',
-                          aws_secret_access_key='x4z3KO67yVn+EHgTuJgz/WYmSVmoM8PbO67t88en')
+                          aws_access_key_id='YOUR_ACCESS_KEY_ID',
+                          aws_secret_access_key='YOUR_SECRET_ACCESS_KEY')
 lambda_client = boto3.client('lambda', 
                              region_name='us-east-1',
-                             aws_access_key_id='AKIAZI2LHWVWTXGWO7OS',
-                             aws_secret_access_key='x4z3KO67yVn+EHgTuJgz/WYmSVmoM8PbO67t88en')
+                             aws_access_key_id='YOUR_ACCESS_KEY_ID',
+                             aws_secret_access_key='YOUR_SECRET_ACCESS_KEY')
 sns = boto3.client('sns',
                    region_name='us-east-1',
-                   aws_access_key_id='AKIAZI2LHWVWTXGWO7OS',
-                   aws_secret_access_key='x4z3KO67yVn+EHgTuJgz/WYmSVmoM8PbO67t88en'
+                   aws_access_key_id='YOUR_ACCESS_KEY_ID',
+                   aws_secret_access_key='YOUR_SECRET_ACCESS_KEY')
                    )
 
 
