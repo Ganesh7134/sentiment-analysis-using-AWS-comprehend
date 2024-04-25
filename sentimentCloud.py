@@ -195,7 +195,7 @@ def report():
             # Here, you can modify this part to fetch the data you want to include in the report
 
             # Publish the report data to SNS topic
-            topic_arn = 'arn:aws:sns:us-east-1:637423564141:customerFeedback'
+            topic_arn = 'TOPIC-ARN-NUMBER'
             sns.publish(
                 TopicArn=topic_arn,
                 Message=report_data,
